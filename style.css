@@ -5,6 +5,13 @@
   margin: 0;
 }
 
+.divider {
+  width: 100%;
+  height: 15px;
+  border-top: 1px solid #e2e2e2;
+  background-color: #f4f5f6;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -68,7 +75,6 @@ main p {
 }
 
 .article-clearfix {
-  display: flex;
   padding-top: 14px;
   padding-bottom: 14px;
   border-top: 1px solid #ddd;
@@ -76,8 +82,8 @@ main p {
 
 .article-clearfix img {
   float: left;
-  width: 90px;
-  height: 90px;
+  width: 100px;
+  height: 100px;
   padding: 5px;
 }
 
@@ -95,8 +101,8 @@ main p {
   font-weight: 700;
   font-size: 15px;
   padding: 5px;
-  bottom: 0.1px;
-  left: 0.2px;
+  bottom: 0;
+  left: 0;
   color: #f72210;
 }
 
@@ -126,7 +132,7 @@ main p {
 
 .versus p {
   position: absolute;
-  top: 80px;
+  top: 65px;
   left: 47%;
   /* margin: 0 auto; */
   width: 38px;
@@ -138,7 +144,6 @@ main p {
 
 .debate-section hr {
   position: relative;
-  top: 10px;
   border: 2px black double;
 }
 
@@ -189,7 +194,7 @@ main p {
 .more-stories,
 .myturn-section,
 .magazine-section,
-.subscribe-section {
+.subscribe-section,.latest-section,footer {
   padding: 10px;
 }
 
@@ -213,8 +218,8 @@ main p {
   display: block;
   width: 25%;
   height: 25%;
-  max-width: 95px;
-  max-height: 95px;
+  width: 95px;
+  height: 95px;
   padding: 5px;
   float: left;
 }
@@ -251,7 +256,7 @@ main p {
 
 .myturn-tag {
   position: absolute;
-  top: 378px;
+  top: 335px;
   padding: 3px;
   background-color: #c3d4d7;
   font-size: 14px;
@@ -300,10 +305,13 @@ main p {
 }
 
 .magazine-section-header {
-  /* left: 49%;
-  width: 100%; */
   display: flex;
   justify-content: center;
+  padding-top: 10px;
+}
+
+.magazine-section-header h4 {
+  padding-left: 5px;
 }
 
 .magazine-section-header-img {
@@ -370,7 +378,7 @@ main p {
 .hollow-tag {
   color: #f61602;
   background-color: white;
-  /* border: 0.2px #f61602 solid; */
+  padding-left: 5px;
 }
 
 .feature-link {
@@ -381,6 +389,7 @@ main p {
 
 .subscribe-header h4 {
   font-size: 16px;
+  padding-left: 5px;
   font-family: "Roboto Condensed", sans-serif;
   color: #f72210;
   font-weight: 800;
@@ -388,15 +397,77 @@ main p {
 
 .cont {
   position: relative;
-  background-image: url("/img/newsweekmag.png");
-  height: 400px;
+  background-color: #f4f5f6;
+  /* background-image: url("/img/newsweekmag.png"); */
+  /* height: 400px; */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
+  flex-flow: column;
   justify-content: center;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+}
+
+.cont img {
+  max-width: 100%;
 }
 
 .btn-1 {
   height: 40px;
+  width: 130px;
+  align-self: center;
+  margin: 10px;
+  font-weight: 800;
+}
+
+.latest-section img {
+  width: 100%;
+  height: 170px;
+}
+.news-center {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+
+.news-center h3 {
+  font-weight: 700;
+  padding: 20px;
+}
+
+.news-center p {
+  padding: 10px;
+  max-width: 80%;
+  font-size: 15px;
+}
+
+footer a {
+  font-size: 15px;
+  font-weight: 300;
+  padding: 3px;
+}
+
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.languages p {
+}
+
+.contact-us {
+  padding: 5px;
+}
+
+.icons .fa {
+  color: rgba(80, 79, 79, 0.925);
+  font-size: 25px;
+  padding: 5px;
 }
