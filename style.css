@@ -19,6 +19,7 @@ a {
   font-weight: 700;
 }
 
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -49,11 +50,6 @@ nav {
   font-weight: 700;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding-top: 10px;
-}
 
 main p {
   padding: 5px 5px 5px 0;
@@ -398,14 +394,12 @@ main p {
 .cont {
   position: relative;
   background-color: #f4f5f6;
-  /* background-image: url("/img/newsweekmag.png"); */
-  /* height: 400px; */
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   flex-flow: column;
   justify-content: center;
-  /* align-items: flex-end; */
+
 }
 
 .cont img {
@@ -470,4 +464,83 @@ footer p {
   color: rgba(80, 79, 79, 0.925);
   font-size: 25px;
   padding: 5px;
+}
+
+@media only screen and (min-width: 768px){
+  .myturn-section {
+    display: flex;
+    flex-flow: column;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .medical {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+  }
+
+  .culture {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+  }
+
+  .myturn-tag {
+    top: 95px;
+  }
+  
+  .misc-2 {
+    /* max-width: 40%; */
+    position: relative;
+  }
+
+  .magazine-section, .editors-picks {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .magazine-art {
+    max-width: 25%;
+    padding: 12px;
+  }
+
+.editors-picks-story {
+  max-width: 50%;
+}
+
+.subscribe-section {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-img {
+  width: 30%;
+  max-width: 250px;
+  padding: 15px;
+}
+
+.latest-section {
+  display: flex;
+}
+
+.latest-section img {
+  width: 50%;
+  height: 100%;
+  max-width: 300px;
+  padding: 10px;
+}
+
+.first-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.first-left {
+  display: flex;
+  align-items: flex-end;
+} 
 }
