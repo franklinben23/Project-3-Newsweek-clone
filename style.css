@@ -5,6 +5,11 @@
   margin: 0;
 }
 
+body {
+  margin: auto;
+  max-width: 1252px;
+}
+
 .divider {
   width: 100%;
   height: 15px;
@@ -19,16 +24,21 @@ a {
   font-weight: 700;
 }
 
-
-nav {
+.back-red {
   display: flex;
   justify-content: space-between;
   background-color: red;
   align-content: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .body {
   position: relative;
+}
+
+.left-nav-elements {
+  color: white;
+  font-weight: 700;
 }
 
 .right-nav-elements {
@@ -49,7 +59,6 @@ nav {
   height: 28px;
   font-weight: 700;
 }
-
 
 main p {
   padding: 5px 5px 5px 0;
@@ -185,7 +194,9 @@ main p {
 .more-stories,
 .myturn-section,
 .magazine-section,
-.subscribe-section,.latest-section,footer {
+.subscribe-section,
+.latest-section,
+footer {
   padding: 10px;
 }
 
@@ -394,7 +405,6 @@ main p {
   display: flex;
   flex-flow: column;
   justify-content: center;
-
 }
 
 .cont img {
@@ -458,7 +468,7 @@ footer p {
   padding: 5px;
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   .myturn-section {
     display: flex;
     flex-flow: column;
@@ -487,12 +497,13 @@ footer p {
   .myturn-tag {
     top: 95px;
   }
-  
+
   .misc-2 {
     position: relative;
   }
 
-  .magazine-section, .editors-picks {
+  .magazine-section,
+  .editors-picks {
     display: flex;
     flex-flow: row wrap;
   }
@@ -537,10 +548,52 @@ footer p {
   .first-left {
     display: flex;
     align-items: flex-end;
-  } 
+  }
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
+  .main-lower-nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .right-nav-elements {
+    padding: 50px 0 0 10px;
+  }
+
+  .top-top-logo {
+    height: 100px;
+    width: 350px;
+  }
+
+  .main-lower-nav {
+    display: flex;
+    padding-top: 9px;
+    /* justify-content: space-around;
+    align-items: flex-end */
+  }
+
+  .lower-lower-nav {
+    border-top: 0.2px #f4f5f7 solid;
+    border-bottom: 0.2px #f4f5f7 solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .lower-lower-nav a {
+    padding: 0 10px 10px 10px;
+    color: #807f84;
+  }
+
+  .lower-lower-nav a strong {
+    color: black;
+  }
+
+  .main-lower-nav a {
+    padding: 0 12px 0 12px;
+    border-right: 0.5px black solid;
+  }
+
   .editors-picks-story {
     width: 25%;
   }
