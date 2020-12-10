@@ -25,6 +25,12 @@ body {
   padding: 5px;
 }
 
+.white {
+  padding-right: 7px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -32,7 +38,8 @@ a {
   font-weight: 700;
 }
 
-.subscribe-section a ,.subscribe-section p {
+.subscribe-section a,
+.subscribe-section p {
   text-align: center;
 }
 
@@ -287,13 +294,16 @@ footer {
 
 .myturn-story {
   padding-bottom: 30px;
+}
+
+.myturn-container {
   position: relative;
 }
 
 .myturn-tag {
   position: absolute;
   padding: 3px;
-  bottom: 65px;
+  bottom: 0;
   background-color: #c3d4d7;
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
@@ -522,8 +532,9 @@ footer p {
     width: 250px;
   }
 
-  .subscribe-section a ,.subscribe-section p {
-  text-align: left;
+  .subscribe-section a,
+  .subscribe-section p {
+    text-align: left;
   }
 
   .medical {
@@ -553,9 +564,9 @@ footer p {
     display: none;
   }
 
-  .myturn-tag {
+  /* .myturn-tag {
     bottom: 160px;
-  }
+  } */
 
   .misc-2 {
     position: relative;
@@ -633,9 +644,9 @@ footer p {
     z-index: 1;
   }
 
-    .myturn-tag {
+  /* .myturn-tag {
     bottom: 135px;
-  }
+  } */
 
   .top-top-logo {
     height: 100px;
