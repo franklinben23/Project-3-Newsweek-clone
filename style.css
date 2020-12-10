@@ -254,6 +254,7 @@ footer {
 }
 
 .blue-span {
+background-color: rgba(255, 255, 255, 0.863);
   color: blue;
 }
 
@@ -373,6 +374,10 @@ footer {
   font-weight: 900;
 }
 
+.issue-top-container {
+  position: relative;
+}
+
 .magazine-section {
   position: relative;
 }
@@ -387,7 +392,7 @@ footer {
 
 .issue-span {
   position: absolute;
-  bottom: 29px;
+  bottom: 0;
   padding: 5px;
   background-color: white;
   color: #f61602;
