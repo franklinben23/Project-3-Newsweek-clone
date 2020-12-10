@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-# Project-3-Newsweek-clone
-this is microverse's third project, a clone of the newsweek's website implemeting bootstrap as the framework
-=======
 
 # Project Name: The Next Web homepage.
 
@@ -39,4 +35,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](lic.url) licensed.
->>>>>>> Stashed changes
