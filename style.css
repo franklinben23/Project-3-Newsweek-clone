@@ -7,7 +7,7 @@
 
 body {
   margin: auto;
-  max-width: 1252px;
+  max-width: 1302px;
 }
 
 .divider {
@@ -17,11 +17,23 @@ body {
   background-color: #f4f5f6;
 }
 
+.subscribe-section img {
+  height: 200px;
+}
+
+.sub-content {
+  padding: 5px;
+}
+
 a {
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-weight: 700;
+}
+
+.subscribe-section a ,.subscribe-section p {
+  text-align: center;
 }
 
 .back-red {
@@ -59,6 +71,10 @@ a {
   padding: 10px;
   font-size: 17px;
   color: #adadad;
+}
+
+.pre-footer {
+  padding: 20px;
 }
 
 .sub-button {
@@ -214,6 +230,10 @@ footer {
   padding: 10px;
 }
 
+.subscribe-section {
+  background-color: #f4f5f6;
+}
+
 .misc-border {
   border: 0.3px lightgrey solid;
 }
@@ -272,8 +292,8 @@ footer {
 
 .myturn-tag {
   position: absolute;
-  top: 335px;
   padding: 3px;
+  bottom: 65px;
   background-color: #c3d4d7;
   font-size: 14px;
   font-family: "Roboto Condensed", sans-serif;
@@ -498,6 +518,14 @@ footer p {
     display: none;
   }
 
+  .subscribe-img {
+    width: 250px;
+  }
+
+  .subscribe-section a ,.subscribe-section p {
+  text-align: left;
+  }
+
   .medical {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -505,9 +533,12 @@ footer p {
   }
 
   .culture {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     column-gap: 15px;
+  }
+
+  .culture-story {
+    max-width: 30%;
   }
 
   .story-lg {
@@ -523,7 +554,7 @@ footer p {
   }
 
   .myturn-tag {
-    top: 95px;
+    bottom: 160px;
   }
 
   .misc-2 {
@@ -543,17 +574,6 @@ footer p {
 
   .editors-picks-story {
     max-width: 50%;
-  }
-
-  .subscribe-section {
-    display: flex;
-    align-items: center;
-  }
-
-  .subscribe-img {
-    width: 30%;
-    max-width: 250px;
-    padding: 15px;
   }
 
   .latest-section {
@@ -595,17 +615,26 @@ footer p {
     position: relative;
   }
 
+  .form-nav {
+    max-width: 200px;
+    height: 30px;
+  }
+
   .back-red ::after {
     position: absolute;
     bottom: -13px;
     right: 0;
     content: "";
     display: block;
-    width: 60px;
+    width: 20px;
     background-color: #f72210;
     border-left: 12px solid white;
     border-top: 13px solid #f72210;
     z-index: 1;
+  }
+
+    .myturn-tag {
+    bottom: 135px;
   }
 
   .top-top-logo {
@@ -614,8 +643,8 @@ footer p {
   }
 
   .main-lower-nav {
-    display: flex;
     padding-top: 9px;
+    max-width: 100%;
   }
 
   .lower-lower-nav {
@@ -634,9 +663,21 @@ footer p {
     color: black;
   }
 
-  .main-lower-nav a {
-    padding: 0 12px 0 12px;
-    border-right: 0.5px black solid;
+  .main-lower-nav li {
+    border-right: 0.5px rgba(0, 0, 0, 0.336) solid;
+    font-size: 17px;
+    list-style: none;
+    text-align: center;
+    flex-grow: 1;
+    font-size: 17px;
+    font-weight: 700;
+    padding: 3px;
+  }
+
+  .main-lower-nav ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .editors-picks-story {
